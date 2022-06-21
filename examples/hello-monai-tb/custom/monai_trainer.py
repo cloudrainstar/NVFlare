@@ -82,8 +82,6 @@ class MONAITrainer(Executor):
         )
         conf.configure()
 
-
-
         # train_engine, and eval_engine are MONAI engines that will be used for training and validation.
         # The corresponding training/validation settings, such as transforms, network and dataset
         # are contained in `TrainConfiger`.

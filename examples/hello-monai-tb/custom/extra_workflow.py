@@ -53,3 +53,4 @@ class ExtraWorkflow(Controller):
         self, client: Client, task_name: str, client_task_id: str, result: Shareable, fl_ctx: FLContext
     ):
         self.log_info(fl_ctx, "Ignoring result from unknown task.")
+        

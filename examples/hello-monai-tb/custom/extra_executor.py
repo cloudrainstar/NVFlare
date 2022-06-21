@@ -41,3 +41,4 @@ class ExtraExecutor(Executor):
     def download_spleen_dataset(self, url: str, dataset_root: str, dataset_path: str):
         tarfile_name = f"{dataset_path}.tar"
         download_and_extract(url=url, filepath=tarfile_name, output_dir=dataset_root)
+        
