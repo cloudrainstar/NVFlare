@@ -44,11 +44,6 @@
   ],
   "workflows": [
       {
-        "id": "extra_workflow",
-        "path": "extra_workflow.ExtraWorkflow",
-        "args": {}
-      },
-      {
         "id": "scatter_and_gather",
         "path": "nvflare.app_common.workflows.scatter_and_gather.ScatterAndGather",
         "args": {
