@@ -172,7 +172,10 @@ class MONAITrainer(Executor):
             fl_ctx: an `FLContext` object.
 
         """
-        if event_type == EventType.AFTER_SEND_TASK_RESULT and fl_ctx.get_prop("__task_name__", None) == "EXTRA_PREPROCESS_TASK":
+        if (
+            event_type == EventType.AFTER_SEND_TASK_RESULT
+            and fl_ctx.get_prop("__task_name__", None) == "EXTRA_PREPROCESS_TASK"
+        ):
             self._initialize_trainer(fl_ctx)
         elif event_type == EventType.ABORT_TASK:
             # This event is fired to abort the current execution task. We are using the ignite engine to run the task.
